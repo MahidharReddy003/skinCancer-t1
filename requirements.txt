@@ -1,0 +1,14 @@
+# Runtime dependencies for the FastAPI inference service (src/api.py).
+# Versions are the ones reported by `pip list` on the development machine.
+#
+# torch / torchvision: the dev machine runs CUDA builds (2.13.0+cu132 / 0.28.0+cu132).
+# PyPI serves a default build; for a CUDA build install from the PyTorch index
+# that matches your driver (see https://pytorch.org/get-started/locally/), e.g.
+#   pip install torch==2.13.0 torchvision==0.28.0 --index-url <matching PyTorch wheel index>
+torch==2.13.0
+torchvision==0.28.0
+numpy==2.2.2
+pillow==10.4.0
+fastapi==0.115.0
+uvicorn==0.30.6
+python-multipart==0.0.9

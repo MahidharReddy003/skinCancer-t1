@@ -1,0 +1,16 @@
+Test Accuracy: 0.7327
+Test Macro F1: 0.6365
+
+              precision    recall  f1-score   support
+
+          nv       0.97      0.74      0.84      1336
+         mel       0.39      0.78      0.52       236
+         bkl       0.61      0.65      0.63       243
+         bcc       0.62      0.83      0.71        90
+       akiec       0.62      0.60      0.61        67
+        vasc       0.53      0.94      0.68        34
+          df       0.38      0.61      0.47        18
+
+    accuracy                           0.73      2024
+   macro avg       0.59      0.74      0.64      2024
+weighted avg       0.82      0.73      0.76      2024

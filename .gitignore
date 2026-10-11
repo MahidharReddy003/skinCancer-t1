@@ -1,0 +1,46 @@
+# Secrets / environment
+.env
+.env.*
+!.env.example
+*serviceAccount*.json
+*-firebase-adminsdk-*.json
+firebase-debug.log*
+.firebase/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Dataset and model weights (large / licensed / regenerable)
+dataset/
+*.pth
+*.pt
+*.onnx
+*.ckpt
+
+# Evaluation: keep summaries, drop mislabeled backups
+results/_backup_mislabeled/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+frontend/.env.local
+frontend/.env.*.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Local backups of edited files
+*.orig
