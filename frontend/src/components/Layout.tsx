@@ -32,7 +32,7 @@ export function PublicLayout() {
         <ThemeToggle />
       </header>
       <main id="main"><Outlet /></main>
-      <footer className="page"><Disclaimer /></footer>
+      <footer className="page stack"><Disclaimer /><nav aria-label="Footer" className="row"><NavLink to="/how-it-works">How it works</NavLink><NavLink to="/about">About</NavLink><NavLink to="/privacy">Privacy</NavLink><NavLink to="/help">Help</NavLink></nav></footer>
     </>
   );
 }
