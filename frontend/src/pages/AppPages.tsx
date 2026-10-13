@@ -6,8 +6,8 @@ import { Badge, Button, Card, EmptyState, ErrorNotice, Spinner, Disclaimer } fro
 export function Overview() {
   return (
     <div className="stack">
-      <EmptyState title="No analyses yet" action={<Button to="/app/system-status" variant="ghost">Check system status</Button>}>
-        Image analysis and saved history arrive in a later build. For now you can check that the backend is reachable and review the model's measured performance.
+      <EmptyState title="Analyze your first image" action={<Button to="/app/analyze">Analyze an image</Button>}>
+        Upload a dermoscopic image to see the model's probability for each of the seven classes. Results aren't saved yet, because history arrives in a later build.
       </EmptyState>
       <Disclaimer />
     </div>

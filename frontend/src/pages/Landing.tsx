@@ -25,8 +25,9 @@ export default function Landing() {
           <div className="card"><div className="stat num">{metrics.macro_f1.toFixed(4)}</div>Macro F1</div>
           <div className="card"><div className="stat num">{metrics.test_samples.toLocaleString()}</div>Test images</div>
         </div>
-        <p className="muted">Accuracy is flattered by class imbalance, so macro F1 and per-class results matter more. Image analysis in this app is coming in a later build.</p>
+        <p className="muted">Accuracy is flattered by class imbalance, so macro F1 and per-class results matter more.</p>
       </section>
     </div>
   );
 }
+

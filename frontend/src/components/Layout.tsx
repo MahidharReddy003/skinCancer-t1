@@ -37,7 +37,7 @@ export function PublicLayout() {
   );
 }
 
-const TITLES: Record<string, string> = { "/app": "Overview", "/app/system-status": "System status" };
+const TITLES: Record<string, string> = { "/app": "Overview", "/app/analyze": "Analyze image", "/app/system-status": "System status" };
 
 export function AppShell() {
   const [open, setOpen] = useState(false);
@@ -56,7 +56,7 @@ export function AppShell() {
       <aside id="sidebar" className={`sidebar${open ? " open" : ""}`} aria-label="Workspace navigation">
         <div style={{ padding: "0 var(--s4) var(--s4)" }}><Brand /></div>
         <NavLink to="/app" end><Icon name="home" />Overview</NavLink>
-        <span className="soon" aria-disabled="true"><Icon name="image" />Analyze<Badge tone="yellow">Soon</Badge></span>
+        <NavLink to="/app/analyze"><Icon name="image" />Analyze</NavLink>
         <span className="soon" aria-disabled="true"><Icon name="activity" />History<Badge tone="yellow">Soon</Badge></span>
         <NavLink to="/model-performance"><Icon name="chart" />Model performance</NavLink>
         <NavLink to="/app/system-status"><Icon name="info" />System status</NavLink>
